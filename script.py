@@ -58,3 +58,9 @@ def update_news():
                 record_news(author, title, text)
     else:
         print("Failed to retrieve the webpage. Status code:", response.status_code)
+
+
+while True:
+    print("Scraping news from Yahoo...")
+    update_news()
+    time.sleep(300)
